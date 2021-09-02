@@ -1,10 +1,145 @@
----
-title: 台北當代藝術展
-layout: ./app/layout.ejs
-engine: ejs
-current: index
----
-<main>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>
+    台北當代藝術展
+  </title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+  <link rel="stylesheet" href="./assets/style/all.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+
+<body>
+  <nav class="navbar  bg-white border border-1 ">
+    <div class="container justify-content-end position-relative align-items-center my-2">
+      <h2 class="h4 position-absolute inset-1 text-center">
+        <a class="link-primary" href="./index.html">EXHIBINECTION</a>
+      </h2>
+
+      <ul class="d-flex z-10">
+        <li><a href="#" class=" d-md-block d-none link-light">Sign in</a></li>
+        <li><a href="#" class="ps-5 d-md-block d-none link-light">Sign up</a></li>
+        <li class="position-relative ms-5"><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"
+            class="d-block link-black "><i class="fas fa-ticket-alt fs-4 "></i>
+            <span
+              class="position-absolute top-0 start-100 translate-middle badge  rounded-circle bg-danger">3</span></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <!-- Modal -->
+  <div class="modal right fade modal-dialog" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content bg-black">
+        <div class="modal-header text-white mt-5 h4 fw-bold">
+          <h5 class="modal-title " id="exampleModalLabel">Cart List</h5>
+          <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-4 ">
+                <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="d-flex justify-content-center align-items-center mt-2">
+                  <img src="./assets/images/product-1.jpg " alt="..." style="width: 120px;height:120px;">
+                </div>
+
+              </div>
+              <div class="col-8">
+                <div class="card-body">
+                  <h5 class="card-title ">2020 台味設計展</h5>
+                  <p class="card-text">01 JUN — 31 OCT</p>
+                  <div class="d-flex justify-content-between">
+                    <p class="text-success">全票</p>
+                    <ul class="d-flex align-items-center p-0">
+                      <li><a class="fw-bold fs-4 text-black" href="#">-</a></li>
+                      <li class="fw-bold fs-5 mx-3">01</li>
+                      <li><a class="fw-bold fs-4 text-black" href="#">+</a></li>
+                    </ul>
+                  </div>
+
+                  <p class="card-text fw-bold fs-5">NT$350</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-4 ">
+                <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="d-flex justify-content-center align-items-center mt-2">
+                  <img src=" ./assets/images/product-3.jpg" alt="..." style="width: 120px;height:120px;">
+                </div>
+
+              </div>
+              <div class="col-8">
+                <div class="card-body">
+                  <h5 class="card-title ">2020 台味設計展</h5>
+                  <p class="card-text">01 JUN — 31 OCT</p>
+                  <div class="d-flex justify-content-between">
+                    <p class="text-success">全票</p>
+                    <ul class="d-flex align-items-center p-0">
+                      <li><a class="fw-bold fs-4 text-black" href="#">-</a></li>
+                      <li class="fw-bold fs-5 mx-3">01</li>
+                      <li><a class="fw-bold fs-4 text-black" href="#">+</a></li>
+                    </ul>
+                  </div>
+
+                  <p class="card-text fw-bold fs-5">NT$350</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-4 ">
+                <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="d-flex justify-content-center align-items-center mt-2">
+                  <img src=" ./assets/images/product-2.jpg" alt="..." style="width: 120px;height:120px;">
+                </div>
+
+              </div>
+              <div class="col-8">
+                <div class="card-body">
+                  <h5 class="card-title ">2020 台味設計展</h5>
+                  <p class="card-text">01 JUN — 31 OCT</p>
+                  <div class="d-flex justify-content-between">
+                    <p class="text-success">全票</p>
+                    <ul class="d-flex align-items-center p-0">
+                      <li><a class="fw-bold fs-4 text-black" href="#">-</a></li>
+                      <li class="fw-bold fs-5 mx-3">01</li>
+                      <li><a class="fw-bold fs-4 text-black" href="#">+</a></li>
+                    </ul>
+                  </div>
+
+                  <p class="card-text fw-bold fs-5">NT$350</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="modal-footer d-flex justify-content-between align-items-center ">
+          <p class="text-white">小計<span class="ms-4">NT$1050</span></p>
+          <a href="./order1.html" class=" btn btn-primary">前往結帳</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main>
     <section>
         <div class="banner">
             <div class="container offset-sm-1 banner-main d-flex flex-column justify-content-center">
@@ -248,3 +383,24 @@ current: index
 
     </section>
 </main>
+
+    <footer class=" border border-1">
+      <div class="container d-flex  align-items-center justify-content-between my-4 ">
+        <div class="d-flex flex-md-row flex-column">
+          <h5 class="me-3">EXHIBINECTION</h5>
+          <p>© 2020. All Rights Reserved.</p>
+        </div>
+        <ul class="navbar d-md-flex  d-md-block   d-none">
+          <li><a class="link-light " href="#">Sign in</a></li>
+          <li><a class="link-light ps-4 " href="#">Sign up</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+
+</body>
+
+</html>

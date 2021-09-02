@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>
-    <%- title %>
+    結帳
   </title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
   <link rel="stylesheet" href="./assets/style/all.css">
@@ -139,7 +139,115 @@
     </div>
   </div>
 
-  <%- contents %>
+  <main>
+    <section class="container mt-4">
+        <div class="row">
+            <div class="col-12 col-sm-8 ">
+                <ol class=" progress-1 d-flex align-items-center text-center justify-content-between ">
+                    <li class="progress-1-active fw-bold ">確認訂單</li>
+                    <li>填寫訂購資訊</li>
+                    <li>填寫付款資訊</li>
+                    <li>完成訂購</li>
+                </ol>
+            </div>
+        </div>
+    </section>
+
+    <section class="container mt-3 ">
+        <div class="row order-wrap">
+            <div class="col-12 col-md-8 ">
+                <div class="d-flex align-items-center justify-content-between">
+                    <div class=" d-flex ">
+                        <img src="./assets/images/product-1.jpg" alt="" style="height: 84px;">
+                        <div class=" d-flex flex-column justify-content-center">
+                            <div class="d-flex justify-content-between ">
+                                <h1 class="h5">2020 台味設計展</h1>
+                                <a class="d-block d-md-none  link-black" href="#">X</a>
+                            </div>
+                            <p class="m-0">01 JUN — 31 OCT</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <p class="text-light">全票 <span>01</span></p>
+                                <p class="d-block d-sm-none">NT$350</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="fs-4 fw-bold d-none d-md-block">NT$350</p>
+
+                    <ul class=" d-flex align-items-center fw-bold  ">
+                        <li><a class="fs-4 link-black d-none d-md-block" href="#">-</a></li>
+                        <li class="fs-5 mx-2 d-none d-md-block">01</li>
+                        <li><a class="fs-4 link-black d-none d-md-block" href="#">+</a></li>
+                    </ul>
+
+                    <a class="link-black fw-bold fs-5 d-none d-md-block" href="#">X</a>
+                </div>
+
+                <div class="d-flex align-items-center justify-content-between mt-4">
+                    <div class=" d-flex ">
+                        <img src="./assets/images/product-2.jpg" alt="" style="height: 84px;">
+                        <div class=" d-flex flex-column justify-content-center">
+                            <div class="d-flex justify-content-between">
+                                <h1 class="h5">2020 台味設計展</h1>
+                                <a class="d-block d-md-none  link-black" href="#">X</a>
+                            </div>
+                            <p class="m-0">01 JUN — 31 OCT</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <p class="text-light">全票 <span>01</span></p>
+                                <p class="d-block d-sm-none">NT$350</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="fs-4 fw-bold d-none d-md-block">NT$350</p>
+
+                    <ul class=" d-flex align-items-center fw-bold  ">
+                        <li><a class="fs-4 link-black d-none d-md-block" href="#">-</a></li>
+                        <li class="fs-5 mx-2 d-none d-md-block">01</li>
+                        <li><a class="fs-4 link-black d-none d-md-block" href="#">+</a></li>
+                    </ul>
+
+                    <a class="link-black fw-bold fs-5 d-none d-md-block" href="#">X</a>
+                </div>
+
+                <div class="d-flex align-items-center justify-content-between mt-4 ">
+                    <div class=" d-flex ">
+                        <img src=" ./assets/images/product-3.jpg" alt="" style="height: 84px;">
+                        <div class=" d-flex flex-column justify-content-center">
+                            <div class="d-flex justify-content-between">
+                                <h1 class="h5">2020 台味設計展</h1>
+                                <a class="d-block d-md-none  link-black" href="#">X</a>
+                            </div>
+                            <p class="m-0">01 JUN — 31 OCT</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <p class="text-light">全票 <span>01</span></p>
+                                <p class="d-block d-sm-none">NT$350</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="fs-4 fw-bold d-none d-md-block">NT$350</p>
+
+                    <ul class=" d-flex align-items-center fw-bold  ">
+                        <li><a class="fs-4 link-black d-none d-md-block" href="#">-</a></li>
+                        <li class="fs-5 mx-2 d-none d-md-block">01</li>
+                        <li><a class="fs-4 link-black d-none d-md-block" href="#">+</a></li>
+                    </ul>
+
+                    <a class="link-black fw-bold fs-5 d-none d-md-block" href="#">X</a>
+                </div>
+            </div>
+
+            <div class="offset-6 offset-sm-0 col-6 col-sm-4 ">
+                <div class="d-flex flex-column justify-content-start justify-content-sm-end h-100 ">
+                    <div class="d-flex justify-content-between align-items-end">
+                        <p class="fw-bold fs-4">小計</p>
+                        <p class="fw-bold fs-4"> NT$1050</p>
+                    </div>
+                    <a href="./order2.html" class="btn btn-lg btn-secondary">下一步</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
 
     <footer class=" border border-1">
       <div class="container d-flex  align-items-center justify-content-between my-4 ">

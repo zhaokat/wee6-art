@@ -1,8 +1,8 @@
+"use strict";
+
 $(function () {
   console.log('Hello Bootstrap5');
-});
-//
-
+}); //
 //
 
 var swiper = new Swiper(".mySwiper", {
@@ -11,7 +11,7 @@ var swiper = new Swiper(".mySwiper", {
   spaceBetween: 30,
   pagination: {
     el: ".swiper-pagination",
-    clickable: true,
+    clickable: true
   },
   breakpoints: {
     1000: {
@@ -25,3 +25,4 @@ var swiper = new Swiper(".mySwiper", {
     }
   }
 });
+//# sourceMappingURL=all.js.map
