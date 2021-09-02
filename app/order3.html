@@ -1,0 +1,174 @@
+---
+title: 結帳
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+<main class="py-4">
+    <section class="container mt-4">
+        <div class="row">
+            <div class="col-12 col-sm-8 ">
+                <ol class=" progress-1 d-flex align-items-center text-center justify-content-between ">
+                    <li class="progress-1-active">確認訂單</li>
+                    <li class="progress-1-active">填寫訂購資訊</li>
+                    <li class="progress-1-active fw-bold">填寫付款資訊</li>
+                    <li>完成訂購</li>
+                </ol>
+            </div>
+        </div>
+    </section>
+
+    <section class="container mt-3">
+        <div class="row">
+            <div class="col-12 d-block d-md-none">
+                <h2>付款資訊</h2>
+                <form action="">
+                    <div class="mt-3">
+                        <label for="credit">信用卡帳號</label>
+                        <br>
+                        <input class="w-100 rounded-3 p-1" id="credit" type="text" placeholder="Xxxx-xxxx-xxxx-xxxx">
+                    </div>
+                    <div class="mt-3">
+                        <label for="data">有效日期</label>
+                        <br>
+                        <input class="w-100 rounded-3 p-1" id="data" type="date" placeholder="(MM/YY)">
+                    </div>
+                    <div class="mt-3">
+                        <label for="password">安全碼</label>
+                        <br>
+                        <input class="w-100 rounded-3  p-1" id="password" type="password" placeholder="***">
+                    </div>
+
+                </form>
+
+                <div class="d-flex justify-content-between mt-7">
+                    <p>小計</p>
+                    <p>NT$1050</p>
+                </div>
+                <div class="d-flex justify-content-between">
+                    <p>折扣</p>
+                    <p>-NT$50</p>
+                </div>
+                <div class="d-flex justify-content-between fs-4 fw-bold">
+                    <p>總金額</p>
+                    <p>NT$1000</p>
+                </div>
+            </div>
+
+
+
+            <div class="col-12 col-md-6 mt-4 ">
+                <div class="d-flex flex-column h-100">
+                    <div class="d-flex  align-items-center justify-content-between">
+                        <div class=" d-flex ">
+                            <img src="./assets/images/product-1.jpg" alt="" style="height: 84px;">
+                            <div class=" d-flex flex-column justify-content-center">
+                                <div class="d-flex justify-content-between ">
+                                    <h1 class="h5">2020 台味設計展</h1>
+                                    <a class="d-block d-md-none  link-black" href="#">X</a>
+                                </div>
+                                <p class="m-0">01 JUN — 31 OCT</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <p class="text-light">全票 <span>01</span></p>
+                                    <p class="d-block d-sm-none">NT$350</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="fs-4 fw-bold d-none d-md-block">NT$350</p>
+
+                        <p class="fw-bold fs-4 d-none d-md-block">1</p>
+                    </div>
+
+                    <div class="d-flex align-items-center justify-content-between mt-4">
+                        <div class=" d-flex ">
+                            <img src="./assets/images/product-2.jpg" alt="" style="height: 84px;">
+                            <div class=" d-flex flex-column justify-content-center">
+                                <div class="d-flex justify-content-between">
+                                    <h1 class="h5">2020 台味設計展</h1>
+                                    <a class="d-block d-md-none  link-black" href="#">X</a>
+                                </div>
+                                <p class="m-0">01 JUN — 31 OCT</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <p class="text-light">全票 <span>01</span></p>
+                                    <p class="d-block d-md-none">NT$350</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="fs-4 fw-bold d-none d-md-block">NT$350</p>
+
+                        <p class="fw-bold fs-4  d-none d-md-block">1</p>
+                    </div>
+
+                    <div class="d-flex align-items-center justify-content-between mt-4 ">
+                        <div class=" d-flex ">
+                            <img src="./assets/images/product-3.jpg" alt="" style="height: 84px;">
+                            <div class=" d-flex flex-column justify-content-center">
+                                <div class="d-flex justify-content-between">
+                                    <h1 class="h5">2020 台味設計展</h1>
+                                    <a class="d-block d-md-none  link-black" href="#">X</a>
+                                </div>
+                                <p class="m-0">01 JUN — 31 OCT</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <p class="text-light">全票 <span>01</span></p>
+                                    <p class="d-block d-sm-none">NT$350</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="fs-4 fw-bold d-none d-md-block">NT$350</p>
+
+                        <p class="fw-bold fs-4 d-none d-md-block">1</p>
+                    </div>
+                    <div class="h-100 d-flex flex-column  justify-content-end ">
+                        <a class="fw-bold fs-4 d-none d-md-block btn btn-lg btn-outline-secondary w-25"
+                            href="./order2.html">返回</a>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+            <!--form-->
+
+            <div class="offset-2 col-4 d-none d-md-block">
+                <h2>付款資訊</h2>
+                <form action="">
+                    <div class="mt-3">
+                        <label for="credit">信用卡帳號</label>
+                        <br>
+                        <input class="w-100 rounded-3 p-1" id="credit" type="text" placeholder="Xxxx-xxxx-xxxx-xxxx">
+                    </div>
+                    <div class="mt-3">
+                        <label for="data">有效日期</label>
+                        <br>
+                        <input class="w-100 rounded-3 p-1" id="data" type="date" placeholder="(MM/YY)">
+                    </div>
+                    <div class="mt-3">
+                        <label for="password">安全碼</label>
+                        <br>
+                        <input class="w-100 rounded-3  p-1" id="password" type="password" placeholder="***">
+                    </div>
+
+                </form>
+
+                <div class="d-flex justify-content-between mt-7">
+                    <p>小計</p>
+                    <p>NT$1050</p>
+                </div>
+                <div class="d-flex justify-content-between">
+                    <p>折扣</p>
+                    <p>-NT$50</p>
+                </div>
+                <div class="d-flex justify-content-between fs-4 fw-bold">
+                    <p>總金額</p>
+                    <p>NT$1000</p>
+                </div>
+
+                <a class="w-100 btn btn-lg btn-secondary " href="./order4.html">下一步</a>
+            </div>
+            <div class="col-12 d-flex d-block d-md-none mt-6">
+                <a class="w-50 btn btn-outline-secondary mx-1" href="./order2.html">返回</a>
+                <a class="w-50 btn btn-secondary mx-1" href="./order4.html">下一步</a>
+            </div>
+    </section>
+</main>
